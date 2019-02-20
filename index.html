@@ -11,16 +11,24 @@
 
     <form id="create-task-form" action="#" method="post">
       <label for="new-task-description">Task description:</label>
+      <select class="list-select">
+        <option value="My Todos">My Todos</option>
+      </select>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
+      <input class = "submit-button" type="submit" value="Create New Task">
     </form>
-
-    <div id="list">
+    <form id="create-new-list" method="post">
+      <label for="new-list-name">New list name:</label>
+      <input type="text" id="new-list-name" name="new-list-name" placeholder="new list name">
+      <input class = "new-list-submit-button" type="submit" value="Create A New List">
+    </form>
+    <div class="list">
       <h2>My Todos</h2>
-      <ul id="tasks">
+      <ul id="My Todos">
       </ul>
     </div>
-  </div>
 
+  </div>
+<script src="index.js" charset="utf-8"></script>
 </body>
 </html>
